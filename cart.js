@@ -41,6 +41,12 @@ const cartItems = [
         price: 150.00,
         quantity: 7
     },
+    {
+        id:8,
+        product: "Soup",
+        price: 7.00,
+        quantity: 1
+    },
 
 ]
 
