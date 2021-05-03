@@ -1,11 +1,10 @@
-const express = require("express");
+const express = require('express');
+const cart = require('./routes/cart');
 const app = express();
-const cartItems = require("./cartItems.routes");
+const port = 3000;
 
 app.use(express.json());
-app.use("/", cartItems);
 
-const port = 3000;
-app.listen(port, () => {
-    console.log(`listening on port: ${port}.`);
-})
+app.use('/cart', cart);
+
+app.listen(port, () => console.log('listening on port 3000'));
